@@ -7,7 +7,6 @@ import Experience from "./sections/Experience";
 import WorkSamples from "./sections/WorkSamples";
 import Tools from "./sections/Tools";
 import WhyMe from "./sections/WhyMe";
-import Resume from "./sections/Resume";
 
 export default function App() {
   return (
@@ -20,7 +19,6 @@ export default function App() {
       <WorkSamples />
       <Tools />
       <WhyMe />
-      <Resume />
       <Footer />
     </div>
   );

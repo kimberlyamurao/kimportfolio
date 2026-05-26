@@ -1,6 +1,17 @@
-import { Mail, Phone, MapPin, Link, Download, ArrowDown } from "lucide-react";
+import { Mail, Phone, MapPin, Link, Download, ArrowDown, Camera } from "lucide-react";
+import { useState } from "react";
 
 export default function Hero() {
+  const [imgSrc, setImgSrc] = useState(null);
+
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const url = URL.createObjectURL(file);
+      setImgSrc(url);
+    }
+  };
+
   return (
     <section
       id="home"
@@ -13,11 +24,28 @@ export default function Hero() {
       <div className="absolute top-1/3 left-16 w-2 h-2 rounded-full bg-teal-400/60" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">
-        {/* Avatar */}
-        <div className="flex-shrink-0">
-          <div className="w-36 h-36 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-teal-400 to-blue-500 flex items-center justify-center shadow-2xl ring-4 ring-white/20">
-            <span className="text-5xl md:text-6xl font-bold text-white select-none">KA</span>
+        {/* Avatar / Photo Upload */}
+        <div className="flex-shrink-0 relative group">
+          <div className="w-36 h-36 md:w-48 md:h-48 rounded-full shadow-2xl ring-4 ring-white/20 overflow-hidden bg-gradient-to-br from-teal-400 to-blue-500 flex items-center justify-center">
+            {imgSrc ? (
+              <img src={imgSrc} alt="Kimberly Amurao" className="w-full h-full object-cover" />
+            ) : (
+              <div className="flex flex-col items-center justify-center gap-2 text-white/80">
+                <Camera size={32} className="text-white/60" />
+                <span className="text-xs text-white/60 text-center px-4 leading-tight">Click to add photo</span>
+              </div>
+            )}
           </div>
+          {/* Upload overlay on hover */}
+          <label className="absolute inset-0 rounded-full cursor-pointer flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity">
+            <div className="flex flex-col items-center gap-1">
+              <Camera size={20} className="text-white" />
+              <span className="text-white text-xs font-medium">{imgSrc ? "Change" : "Upload"}</span>
+            </div>
+            <input type="file" accept="image/*" className="hidden" onChange={handleImageUpload} />
+          </label>
+          {/* Ring pulse decoration */}
+          <div className="absolute inset-0 rounded-full ring-2 ring-teal-400/40 animate-ping" style={{ animationDuration: "3s" }} />
         </div>
 
         {/* Content */}
@@ -58,11 +86,11 @@ export default function Hero() {
           {/* CTA */}
           <div className="flex gap-3 justify-center md:justify-start">
             <a
-              href="#resume"
-              onClick={(e) => { e.preventDefault(); document.getElementById("resume")?.scrollIntoView({ behavior: "smooth" }); }}
+              href="/Kimberly_Amurao_Resume.pdf"
+              download="Kimberly_Amurao_Resume.pdf"
               className="bg-teal-400 hover:bg-teal-300 text-slate-900 text-sm font-semibold px-6 py-3 rounded-full flex items-center gap-2 transition-all shadow-lg shadow-teal-400/30"
             >
-              <Download size={15} /> View Resume
+              <Download size={15} /> Download Resume
             </a>
             <a
               href="#about"

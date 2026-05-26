@@ -9,7 +9,6 @@ const navItems = [
   { id: "samples", label: "Work Samples" },
   { id: "tools", label: "Tools" },
   { id: "whyme", label: "Why Me" },
-  { id: "resume", label: "Resume" },
 ];
 
 export default function Navbar() {

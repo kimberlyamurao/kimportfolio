@@ -99,7 +99,7 @@ export default function Hero() {
               </span>
               <a href="https://www.linkedin.com/in/kimberly-amurao-b060581b4"
                 target="_blank" rel="noreferrer"
-                className="flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white text-xs px-3 py-2 rounded-full transition-all border border-white/10">
+                className="flex items-cente r gap-1.5 bg-white/10 hover:bg-white/20 text-white text-xs px-3 py-2 rounded-full transition-all border border-white/10">
                 <LinkedinIcon /> LinkedIn
               </a>
             </div>

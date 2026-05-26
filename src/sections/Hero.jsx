@@ -56,7 +56,7 @@ export default function Hero() {
                   src={KIM_PHOTO}
                   alt="Kimberly Amurao"
                   className="w-full h-full object-cover"
-                  style={{ objectPosition: "50% 10%" }}
+                  style={{ objectPosition: "50% 60%" }}
                 />
               </div>
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-teal-500 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 whitespace-nowrap">

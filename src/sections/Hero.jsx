@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin, Download, ChevronDown } from "lucide-react";
-
+import ResumePDF from "./Kimberly_Amurao_Resume.pdf";
 const LinkedinIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
@@ -82,9 +82,12 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-              <a href="/Kimberly_Amurao_Resume.pdf" download="Kimberly_Amurao_Resume.pdf"
-                className="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-400 text-white text-sm font-semibold px-7 py-3 rounded-full transition-all shadow-lg shadow-teal-500/30">
-                <Download size={15} /> Download Resume
+              <a href={ResumePDF}
+                 download="Kimberly_Amurao_Resume.pdf"
+                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-black font-medium hover:scale-105 transition-all duration-300"
+              >
+              <Download size={18} />
+               Download Resume
               </a>
               <a href="#about"
                 className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white text-sm font-semibold px-7 py-3 rounded-full transition-all border border-white/20">

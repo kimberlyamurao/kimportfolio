@@ -8,7 +8,7 @@ const categories = [
     titleColor: "text-blue-700",
     skills: [
       { icon: CalendarDays, label: "Calendar Management", yrs: "3 yrs" },
-      { icon: Mail, label: "Email Management", yrs: "" },
+      { icon: Mail, label: "Email Management", yrs: "5 yrs" },
       { icon: FolderOpen, label: "Project Coordination", yrs: "2 yrs" },
       { icon: FileText, label: "Contract Creation", yrs: "2 yrs" },
       { icon: Users, label: "Customer & Supplier Interaction", yrs: "5 yrs" },

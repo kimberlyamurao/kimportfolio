@@ -8,7 +8,7 @@ const countries = [
 ];
 
 const workstationItems = [
-  { icon: "💻", label: "Laptop", desc: "Primary work device" },
+  { icon: "💻", label: "Desktop", desc: "Primary work device" },
   { icon: "🖥️", label: "Dual Monitor", desc: "Extended display setup" },
   { icon: "🎧", label: "Headset", desc: "For calls & meetings" },
   { icon: "📶", label: "Stable Internet", desc: "Reliable remote connection" },

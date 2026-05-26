@@ -19,7 +19,11 @@ export default function Footer() {
             <span className="flex items-center gap-2 text-blue-200">
               <MapPin size={14} /> Calamba, Laguna, Philippines
             </span>
-            <a href="#" className="flex items-center gap-2 text-blue-200 hover:text-teal-400 transition-colors">
+            <a
+              href="https://www.linkedin.com/in/kimberly-amurao-b060581b4"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 text-blue-200 hover:text-teal-400 transition-colors">
               <Link size={14} /> LinkedIn Profile
             </a>
           </div>

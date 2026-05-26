@@ -78,7 +78,7 @@ export default function Hero() {
             <span className="flex items-center gap-2 bg-white/10 text-white text-xs px-3 py-2 rounded-full">
               <MapPin size={13} /> Calamba, Laguna, Philippines
             </span>
-            <a href="#" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white text-xs px-3 py-2 rounded-full transition-all">
+            <a href="https://www.linkedin.com/in/kimberly-amurao-b060581b4" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white text-xs px-3 py-2 rounded-full transition-all">
               <Link size={13} /> LinkedIn
             </a>
           </div>

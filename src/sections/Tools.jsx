@@ -7,7 +7,7 @@ const toolCategories = [
     accent: "bg-blue-600",
     bg: "bg-blue-50",
     iconColor: "text-blue-600",
-    tools: ["QuickBooks", "Zoho Books", "Exact Online", "ERP Systems", "Productive", "Simplicate"],
+    tools: ["QuickBooks", "Zoho Books", "Exact Online", "Basecone", "Twinfield", "Moss", "ERP Systems", "Productive", "Simplicate"],
   },
   {
     title: "Communication",
@@ -23,7 +23,7 @@ const toolCategories = [
     accent: "bg-amber-500",
     bg: "bg-amber-50",
     iconColor: "text-amber-600",
-    tools: ["Google Workspace", "Microsoft Office 365", "Excel / Sheets", "JAMF", "Google Drive"],
+    tools: ["Google Workspace", "Microsoft Office 365", "Excel / Sheets", "JAMF", "Google Drive", "Personio"],
   },
   {
     title: "Productivity & PM",

@@ -1,5 +1,4 @@
-import { Eye, Lock, UserCheck, PenLine, Lightbulb, Globe } from "lucide-react";
-import { Mail } from "lucide-react";
+import { Eye, Lock, UserCheck, PenLine, Lightbulb, Globe, Mail, Calendar } from "lucide-react";
 
 const reasons = [
   {
@@ -57,12 +56,33 @@ export default function WhyMe() {
             <p className="text-slate-500 text-sm leading-relaxed mb-8">
               Beyond the job description — here's why hiring managers and international clients choose to work with me.
             </p>
-            <a
-              href="mailto:kimberlyamurao60@gmail.com"
-              className="inline-flex items-center gap-2 bg-[#0f1f4a] hover:bg-[#1d4ed8] text-white text-sm font-semibold px-6 py-3 rounded-full transition-all shadow-lg"
-            >
-              <Mail size={15} /> Get In Touch
-            </a>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col gap-3">
+              <a
+                href="mailto:kimberlyamurao60@gmail.com"
+                className="inline-flex items-center justify-center gap-2 bg-[#0f1f4a] hover:bg-[#1d4ed8] text-white text-sm font-semibold px-6 py-3 rounded-full transition-all shadow-lg w-full md:w-auto"
+              >
+                <Mail size={15} /> Get In Touch
+              </a>
+              <a
+                href="https://calendly.com/kimberlyamurao60"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-teal-500 hover:bg-teal-400 text-white text-sm font-semibold px-6 py-3 rounded-full transition-all shadow-lg shadow-teal-500/20 w-full md:w-auto"
+              >
+                <Calendar size={15} /> Book a Meeting
+              </a>
+            </div>
+
+            {/* Calendly inline hint */}
+            <div className="mt-4 p-4 bg-teal-50 border border-teal-100 rounded-2xl">
+              <p className="text-teal-700 text-xs font-medium flex items-center gap-2">
+                <Calendar size={13} />
+                Schedule a free 30-min intro call via Calendly
+              </p>
+              <p className="text-teal-500 text-xs mt-1">Available for timezone-friendly slots (PH / EU / ME)</p>
+            </div>
           </div>
 
           <div className="grid gap-4">
